@@ -1,4 +1,4 @@
-package net.praqma.codeacademy.gildedrose;
+new Item("Sulfuras, Hand of Ragnaros", 0, 80)package net.praqma.codeacademy.gildedrose;
 
 import static org.junit.Assert.*;
 
@@ -12,6 +12,13 @@ public class GildedRoseTest {
         GildedRose app = new GildedRose(items);
         app.updateQuality();
         assertEquals(1,1);//"fixme", app.items[0].name);
+    }
+    @Test
+    public void SulfurasTest() {
+        Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 0, 80) };
+        GildedRose app = new GildedRose(items);
+	app.updateGuality();
+	assertEqual(1,0);
     }
 
 }
