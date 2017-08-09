@@ -18,7 +18,7 @@ public class GildedRoseTest {
         Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 0, 80) };
         GildedRose app = new GildedRose(items);
 	app.updateGuality();
-	assertEqual(1,0);
+	assertEqual(80,app.items[0].quality);
     }
 
 }
