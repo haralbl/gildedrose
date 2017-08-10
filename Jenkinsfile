@@ -2,7 +2,8 @@
 
 node {
     stage ('Preparation') {
-        echo 'Hello World'
+        echo 'Cloning repo...'
+        sh "git clone git@github.com:haralbl/gildedrose.git"
     }
     stage ('Build') {
         echo 'Hello World'
