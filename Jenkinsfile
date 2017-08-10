@@ -6,7 +6,7 @@ node {
         sh "git clone git@github.com:haralbl/gildedrose.git"
     }
     stage ('Build') {
-        echo 'Hello World'
+        echo 'Build ...'
     }
     stage ('Results') {
         echo 'Hello World'
