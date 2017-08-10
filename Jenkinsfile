@@ -10,6 +10,11 @@ node {
     }
     stage ('Results') {
         junit '**/target/surefire-reports/TEST-*.xml'
-        archiveArtifacts '**/target/\\*.jar'
+        archiveArtifacts '**/target/*.jar'
+    }
+    stage ('Javadoc') {
+        mvn site
+        archive 'target/javadoc/*'
+        archive 'target/gildedrose-*.jar'
     }
 }
